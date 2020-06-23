@@ -18,6 +18,7 @@ namespace FindDuplicateCharacters
             string line = Console.ReadLine();
             char[] alonechar = line.ToCharArray();
             Dictionary<char, int> dictionary = new Dictionary<char, int>();
+
             foreach (var ch in alonechar)
             {
                 if (dictionary.ContainsKey(ch))
